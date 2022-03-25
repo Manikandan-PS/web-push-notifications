@@ -1,0 +1,41 @@
+{
+  "name": "ps-web-push-notifictions",
+  "version": "1.0.0",
+  "description": "A REST API service for push notifications using vapId",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "everything": "node bin/start-everything.js"
+  },
+  "keywords": [
+    "web-push notification",
+    "ps-notification"
+  ],
+  "author": "Manikandan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "debug-logger": "^0.4.1",
+    "express": "^4.17.1",
+    "get-node-arguments": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "mocha": "^8.2.1",
+    "mongoose": "^5.11.4",
+    "node-debug": "^0.1.0",
+    "pm2": "^4.5.4",
+    "socket.io": "^3.0.4",
+    "stripcolorcodes": "^0.1.0",
+    "typeorm": "^0.2.30",
+    "util": "^0.12.3",
+    "web-push": "^3.4.5",
+    "winston": "^3.3.3"
+  },
+  "bin": {
+    "ps": "./bin/ps.js"
+  }
+}

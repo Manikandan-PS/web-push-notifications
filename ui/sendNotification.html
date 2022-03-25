@@ -1,0 +1,21 @@
+
+
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+            <title>Web API Example</title></head>
+    <body>
+       <script>
+        function sendNotification(){
+            fetch('/notify', {
+                method: 'GET',
+                headers: new Headers({'Content-Type': 'application/json'}),
+            }).then(function(data) {
+                console.log("returned from server:");
+	        console.log(data);
+        });  
+    }
+    </script>
+    <button onclick="sendNotification()">Send Notification</button>
+    </body>
+</html>
